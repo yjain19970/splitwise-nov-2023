@@ -18,7 +18,7 @@ public class Group extends BaseModel {
     @ManyToMany
     private List<User> members;
 
-    @OneToMany(mappedBy = "group") // mapped by {} attribute in {other (Expense)} class
+    @OneToMany(mappedBy = "group")
     private List<Expense> expenses;
 
     @ManyToOne
